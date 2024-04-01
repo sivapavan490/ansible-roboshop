@@ -9,6 +9,7 @@
     ansible.builtin.yum:
       name: nodejs
       state: installed
+      
   - name: checkroboshop user exist or not
     ansible.builtin.command: id roboshop
     register: output # output is variable name
